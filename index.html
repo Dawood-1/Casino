@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+        /*  Start for top image and Title Text */
+        .main {
+            width: 100vw;
+            background-color: red;
+        }
+
+        .container {
+            background-color: gold;
+            width: 100%;
+            text-align: center;
+        }
+
+        .img {
+            background-image: linear-gradient(to bottom, rgba(1, 12, 5, 0.918), rgba(2, 65, 21, 0.925)),
+                url('casino.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 550px;
+            position: relative;
+            background-blend-mode: multiply;
+
+        }
+
+        .title-top {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            width: 100%;
+            color: gold;
+
+        }
+
+        .title-top h1 {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .title-top h2 {
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .btn-title {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .btn-title button {
+            padding: 5px 28px;
+            background-color: transparent;
+            color: rgba(255, 217, 0, 0.514);
+            border-color: rgba(255, 217, 0, 0.514);
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .icon {
+            padding-top: 60px;
+        }
+
+        .icon .fa-arrow-down {
+            border-radius: 50px;
+            border: 2px solid;
+            border-color: rgba(255, 217, 0, 0.514);
+            padding: 10px 10px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /*  End for top image and Title Text */
+        /* Media Qurey Start for top image and Title Text */
+        /*  Break Point  992px */
+        @media(max-width:992px) {
+            .title-top h1 {
+                font-size: 23px;
+            }
+
+            .title-top h2 {
+                font-size: 45px;
+            }
+
+            .btn-title button {
+                font-size: 16px;
+            }
+        }
+
+        /* Break Point  778px */
+        @media(max-width:768px) {
+            .title-top h1 {
+                font-size: 20px;
+            }
+
+            .title-top h2 {
+                font-size: 40px;
+            }
+
+            .btn-title button {
+                font-size: 14px;
+            }
+        }
+
+        /* Last Break Point  576px */
+        @media(max-width:576px) {
+            .title-top h1 {
+                font-size: 17px;
+            }
+
+            .title-top h2 {
+                font-size: 30px;
+            }
+
+            .btn-title button {
+                font-size: 12px;
+            }
+
+            .icon {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Qurey End for top image and Title Text */
+
+
+        .main-of-second-part {
+            background-color: rgba(1, 43, 1, 0.815);
+            width: 100vw;
+        }
+
+        .container-of-second-part {
+            /* background-color: red; */
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .second-part-title {
+            padding: 40px 20px;
+        }
+
+        .second-part-title h3 {
+            font-size: 40px;
+            color: gold;
+        }
+
+        .second-part-img {
+            padding: 30px;
+        }
+
+        .second-part-img img {
+            width: 80%;
+            height: 60vh;
+        }
+
+        @media(max-width:992px) {
+            .second-part-title h3 {
+                font-size: 37px;
+            }
+
+            .second-part-img img {
+                width: 83%;
+                height: 55vh;
+            }
+        }
+
+        @media(max-width:768px) {
+            .container-of-second-part {
+                width: 95%;
+            }
+
+            .second-part-title h3 {
+                font-size: 30px;
+            }
+
+            .second-part-img img {
+                width: 95%;
+                height: 48vh;
+            }
+        }
+
+        @media(max-width:576px) {
+            .container-of-second-part {
+                width: 98%;
+            }
+
+            .second-part-title h3 {
+                font-size: 25px;
+            }
+
+            .second-part-img img {
+                width: 100%;
+                height: 35vh;
+            }
+        }
+
+        @media(max-width:350px) {
+            .container-of-second-part {
+                width: 100%;
+            }
+
+            .second-part-title h3 {
+                font-size: 22px;
+            }
+
+            .second-part-img img {
+                width: 98%;
+                height: 30vh;
+            }
+        }
+
+        .second-part-last-title {
+            padding: 30px 0px;
+        }
+
+        .second-part-last-title h3 {
+            font-size: 35px;
+            color: gold;
+        }
+
+        .first-form {
+            line-height: 30px;
+
+            width: 85%;
+            margin: auto;
+        }
+
+        .one-inputs,
+        .two-inputs {
+
+
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+        .input-group {
+            width: 48%;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .input-group input {
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 5px;
+            border-color: gold;
+        }
+
+        .text {
+            width: 70%;
+            background-color: white;
+            height: 200px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 30px;
+            border: 2px solid rgb(202, 174, 11);
+
+        }
+
+        .textarea {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .under-title {
+            color: black;
+            text-align: center;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 40px;
+        }
+
+        .under-title-button {
+            padding: 5px 8px;
+            background-color: white;
+            color: rgba(255, 217, 0, 0.979);
+            border: 1px solid rgba(255, 217, 0, 0.514);
+            font-size: 17px;
+            cursor: pointer;
+            margin: auto;
+            width: 25%;
+            text-align: center;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px;
+            /* margin-bottom: 5px; */
+        }
+
+        .under-title-button:hover {
+            background-color: rgba(255, 217, 0, 0.2);
+        }
+
+        #file-input {
+            display: none;
+        }
+
+        .submit-btn {
+            width: 70%;
+            padding: 10px 20px;
+            background-color: rgba(255, 217, 0, 0.514);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-bottom: 15px;
+        }
+
+        @media(max-width:992px) {
+            .first-form {
+                line-height: 25px;
+                width: 95%;
+            }
+
+            .text {
+                width: 70%;
+                height: 160px;
+            }
+
+            .under-title-button {
+                width: 20%;
+                padding: 0px 4px;
+            }
+
+            .under-title {
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+            .textarea label {
+                font-size: 16px !important;
+            }
+
+        }
+
+        @media(max-width:768px) {
+
+            .one-inputs,
+            .two-inputs {
+                width: 80%;
+            }
+
+            .one-inputs,
+            .two-inputs label {
+                font-size: 15px !important;
+            }
+
+            .text {
+                width: 80%;
+                height: 150px;
+
+            }
+
+            .under-title-button {
+                width: 28%;
+                /* padding: 0px 4px; */
+                font-size: 17px;
+            }
+
+            .under-title {
+                font-size: 14px;
+                line-height: 27px;
+            }
+
+            .submit-btn {
+                width: 80%;
+            }
+        }
+
+        @media(max-width:576px) {
+
+            .one-inputs,
+            .two-inputs {
+                width: 90%;
+            }
+
+            .one-inputs,
+            .two-inputs label {
+                font-size: 12px !important;
+            }
+
+            .text {
+                width: 90%;
+                height: 120px;
+            }
+
+            .under-title-button {
+                width: 35%;
+                font-size: 15px;
+                /* padding: 0px 4px; */
+            }
+
+            .under-title {
+                font-size: 12px;
+                line-height: 25px;
+            }
+
+            .submit-btn {
+                width: 90%;
+                font-size: 15px;
+            }
+        }
+
+        .last-part {
+    width: 100vw;
+    background-color: rgb(2, 48, 2);
+    color: white;
+}
+
+.part-flex {
+    /* padding: 40px; */
+    padding: 20px 0px;
+    width: 98%;
+    background-color: rgb(2, 48, 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+.first, .second {
+    width: 25%; /* First and second sections take 25% each */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.first {
+    line-height: 40px;
+}
+
+.first-title,
+.two-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-title i,
+.two-part i {
+    font-size: 17px;
+    color: goldenrod !important;
+}
+
+.mind-part-icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.mind-part-icon i {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: goldenrod !important;
+}
+
+.three {
+    width: 40%; /* Map section takes 50% width */
+    height: 180px;
+
+}
+.three iframe{
+    margin-top: 20px;
+    padding: 5px 8px;
+}
+
+@media(max-width: 992px) {
+    .part-flex {
+        flex-direction: column;
+    }
+
+    .first, .second, .three {
+        width: 98%;
+        margin-bottom: 30px;
+    }
+
+    .mind-part-icon i {
+        font-size: 15px;
+        padding: 9px;
+    }
+}
+
+@media(max-width: 768px) {
+    .part-flex {
+        width: 97%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .first, .second, .three {
+        width: 100%;
+    }
+
+    .mind-part-icon i {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+@media(max-width: 576px) {
+    .first, .second, .three {
+        width: 100%;
+    }
+
+    .mind-part-icon i {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!--   End for top image and Title Text Code  -->
+    <div class="main">
+        <div class="container">
+            <div class="top-pic">
+                <div class="img"></div>
+                <div class="title-top">
+                    <h1>Bishkek Grand Casino</h1>
+                    <h2>OPENING SOON</h2>
+                    <div class="btn-title">
+                        <button>Notify Me</button>
+                    </div>
+                    <div class="icon"><i class="fa-solid fa-arrow-down"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End for top image and Title Text  Code -->
+
+    <div class="main-of-second-part">
+        <div class="container-of-second-part">
+            <div class="second-part-title">
+                <h3>Gallery</h3>
+            </div>
+            <div class="second-part-img">
+                <img src="casino-3491252_1280.jpg" alt="">
+            </div>
+            <div class="second-part-last-title">
+                <h3>Were Hiring</h3>
+            </div>
+
+        </div>
+        <div class="first-form">
+            <form action="">
+                <div class="one-inputs">
+                    <div class="input-group">
+                        <label for="first-name">FIRST NAME*</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">LAST NAME*</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="two-inputs">
+                    <div class="input-group">
+                        <label for="email">EMAIL*</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">PHONE*</label>
+                        <input type="text" id="phone">
+                    </div>
+                </div>
+                <div class="textarea">
+                    <label for="">Resume/cv</label>
+                    <div class="text">
+                        <div class="under-title">
+                            Drop file here <br> or
+                            <input type="file" id="file-input" />
+                            <input type="file" id="file-input" style="display: none;" />
+
+
+                            <label for="file-input" class="under-title-button">Upload File</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Application</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="last-part">
+            <div class="part-flex">
+                <div class="first">
+                    <h3>Contact Us</h3>
+                    <div class="first-title">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>ABC</h4>
+                    </div>
+                    <div class="two-part">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h4>+9231283786</h4>
+                    </div>
+                </div>
+
+                <div class="second">
+                    <h3>Social Media</h3>
+                    <div class="mind-part-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="three">
+                    <h3>Use tha map</h3>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217897.62046272442!2d72.92448692145317!3d31.42375904146948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392242a895a55ca9%3A0xdec58f88932671c6!2sFaisalabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1741894677497!5m2!1sen!2s" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>
